@@ -1,0 +1,49 @@
+<div class="page-header">
+	<h1>Cadastrar Aluno</h1>
+</div>
+
+<%= form_for @aluno do |f| %>
+
+	<p>
+		<%= f.label :nome_completo %> <br>
+		<%= f.text_field :nome_completo, placeholder: 'Digite o nome completo do aluno', size: 80 %>
+	</p>
+
+		
+	<p>
+		<%= f.label :email %> <br>
+		<%= f.text_field :email %>
+	</p>
+
+		
+	<p>
+		<%= f.label :matricula %> <br>
+		<%= f.text_field :matricula %>
+	</p>
+
+		
+	<p>
+		<%= f.label :data_nascimento %> <br>
+		<%= f.text_field :data_nascimento %>
+	</p>
+
+		
+	<p>
+		<%= f.label :nome_da_mae %> <br>
+		<%= f.text_field :nome_da_mae %>
+	</p>
+
+		
+	<p>
+		<%= f.label :fone %> <br>
+		<%= f.text_field :fone %>
+	</p>
+
+	<div class="form-actions">
+		<%= f.submit 'Cadastrar', class: 'btn btn-primary' %>
+		<%= link_to 'Cancelar', alunos_path, class: 'btn btn-default' %>
+
+	</div>
+
+
+<% end %>

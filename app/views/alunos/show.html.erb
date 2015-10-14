@@ -1,0 +1,36 @@
+<div class="page-header">
+	<%= link_to 'Voltar', alunos_path, class: 'btn btn-primary pull-right' %>
+	<h1>Ficha do aluno</h1>
+</div>
+
+<ul>
+	
+	<li><strong>nome_completo:</strong> <%= @aluno.nome_completo %></li>
+	<li><strong>email:</strong> <%= @aluno.email %></li>
+	<li><strong>matricula:</strong> <%= @aluno.matricula %></li>
+	<li><strong>data_nascimento:</strong> <%= @aluno.data_nascimento %></li>
+	<li><strong>nome_da_mae:</strong> <%= @aluno.nome_da_mae %></li>
+	<li><strong>fone:</strong> <%= @aluno.fone %></li>
+	<li><strong>created_at:</strong> <%= @aluno.created_at %></li>
+	<li><strong>updated_at:</strong> <%= @aluno.updated_at %></li>
+</ul>
+
+
+
+
+
+
+<% content_for :css do %>
+<style>
+	h1 {
+		color: red;
+	}
+</style>
+<% end %>
+
+<% content_for :js do %>
+<script>
+	// alert("Você está na página show")
+</script>
+<% end %>
+
